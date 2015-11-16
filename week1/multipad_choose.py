@@ -33,7 +33,8 @@ while True:
     # pos = input("# of position in ciphertext: ")
     work_cipher = encr_decr.hexxor(cipher_1, cipher_2)
     output = encr_decr.decrypt(work_cipher[0:len(hex_word)], hex_word)
-    print('output is: ', output.decode('ascii', 'backslashreplace'))
+    print('output is: "{}" #{}/{}'.format(output.decode('ascii', 'backslashreplace'),\
+    len(output.decode('ascii', 'backslashreplace')), len(cipher_2) / 2))
 
 
 
